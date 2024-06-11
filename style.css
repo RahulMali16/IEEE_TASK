@@ -1,0 +1,252 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and main container styling */
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Navbar styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+  }
+  
+  .navbar .logo img {
+    height: 50px;
+  }
+  
+  .navbar .list {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navbar .list .items {
+    margin: 0 10px;
+  }
+  
+  .navbar .list .items a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .navbar .button .button1 {
+    background: #f76b1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .navbar .button .button1:hover {
+    background: #f5a623;
+  }
+  
+  /* About section styling */
+  .aboutsanwaad {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .aboutsanwaad h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+  }
+  
+  .aboutsanwaad h4 {
+    color: #555;
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
+  
+  /* Form section styling */
+  .form0 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background: white;
+    padding: 40px 20px;
+  }
+  
+  .form0 .formimg {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .form0 .formimg img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .form0 .form_content {
+    flex: 1;
+    min-width: 300px;
+    margin-top: 20px;
+  }
+  
+  .form0 .form h4 {
+    margin-bottom: 20px;
+  }
+  
+  .form0 .form .form-grp {
+    margin-bottom: 15px;
+  }
+  
+  .form0 .form .form-grp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form0 .form .butn {
+    background: #f76b1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .form0 .form .butn:hover {
+    background: #f5a623;
+  }
+  
+  /* Speakers section styling */
+  .sp_name {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .speakers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .speakers .speakers_name {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .speakers .speakers_name img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .speakers .speakers_name h4 {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  /* Gallery section styling */
+  .gallery {
+    text-align: center;
+    background: #f76b1c;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .gall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  .gall .img {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .gall .img img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Footer styling */
+  footer {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  footer h3 {
+    margin-bottom: 10px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 5px;
+  }
+  
+  footer .social-media-handles {
+    display: flex;
+    list-style: none;
+  }
+  
+  footer .social-media-handles li {
+    margin-right: 10px;
+  }
+  
+  footer .social-media-handles li i {
+    color: white;
+    font-size: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .form0 {
+      flex-direction: column;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
